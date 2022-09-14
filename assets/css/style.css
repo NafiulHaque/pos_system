@@ -62,7 +62,7 @@ body.dark{
     z-index: 100;  
 }
 .sidebar.close{
-    width: 80px;
+    width: 89px;
 }
 
 /* ===== Reusable code - Here ===== */
@@ -208,19 +208,20 @@ body.dark .sidebar header .toggle{
     transition: var(--tran-03);
 }
 .sidebar .menu-links li i{
-    height: 30px;
+    height: 36px;
     min-width: 58px;
     text-align: center;
     cursor: pointer;
     transition: var(--tran-05);
-    line-height: 30px;
-    font-size: 25px;
+    line-height: 36px;
+    font-size: 27px;
     padding-top: 2.5px;
 }
 
-.sidebar .icon-link:hover{
+.sidebar .menu-links li:hover{
     background-color: var(--primary-color);
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .sidebar li a:hover .icon,
@@ -262,7 +263,8 @@ body.dark .sidebar li a:hover .text{
     width: 100%;
    padding-left: 73px;
     display: none;
-    border-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 .sidebar .menu-bar .nav-link .submenu >li>a{
     text-decoration: none;
@@ -294,7 +296,8 @@ body.dark .sidebar li a:hover .text{
 position: absolute;
 /* background: none; */
 left: 100%;
-border-radius: 6px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
 width: 145px;
 opacity: 0;
 display: block;
@@ -305,6 +308,7 @@ pointer-events: none;
 transition: var(--tran-05);
 z-index: 5;
 }
+
 .sidebar.close .menu-links  li.nav-link:hover .submenu{
     opacity: 1;
     pointer-events: auto;
@@ -312,7 +316,7 @@ z-index: 5;
 }
 .sidebar .menu-links .link-name{
     /* display: none; */
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     color: red;
     transition: var(--tran-05);
@@ -320,26 +324,26 @@ z-index: 5;
 .sidebar.close .menu-links .link-name{
     opacity: 0;
     pointer-events: none;
-    z-index: 5;
+    z-index: 99;
 }
 .sidebar .menu-links li .submenu .link-name{
     display: none;
 }
 .sidebar.close .menu-links li .submenu .link-name{
-  font-size: 18px;
+  font-size: 15px;
   opacity: 1;
   display: block;
 }
 .sidebar .menu-links li .submenu.blank{
-    opacity: 0;
+    opacity: 1;
     pointer-events: auto;
-    padding: 3px 20px 6px 16px;
-    /* opacity: 0; */
+    padding: 1px 20px 2px 16px;
+    opacity: 0;
     pointer-events: none;
 }
 .sidebar .menu-links li:hover .submenu.blank{
 /* top: 50%; */
-transform: translateY(-50%);
+/* transform: translateY(-50%); */
 }
 .sidebar .menu-bar  li i{
     color: var(--text-color);
