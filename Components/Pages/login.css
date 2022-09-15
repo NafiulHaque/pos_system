@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #ee2b46;
+    --primary-color: #273C75;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #ddd;
+    --border-color: lightgray;
+    --submenu-color:#273C75;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    overflow: hidden;
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+    --border-color: gray;
+    --submenu-color: #3a3b3c;
+}
+
+.main-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10%;
+}
+.main-component .left{
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    flex:50%;
+}
+.main-component .left .logo>img{
+    width: 150px;
+    padding: 20px 0px;
+}
+.main-component .left .form{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: var(--primary-color);
+}
+.main-component .left .form .htext{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.main-component .left .form label{
+    font-size: 10px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.main-component .left .form input,
+.main-component .left .form select,
+.main-component .left .form button{
+    border-radius: 6px;
+    font-size: 20px;
+    border: solid 2px var(--primary-color);
+}
+.main-component .right{
+    flex:50%;
+    width: 100%;
+}
+
